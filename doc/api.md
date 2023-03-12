@@ -1,4 +1,10 @@
 ### API
+#### apikey
+```
+header里加上 apikey
+apikey: FgfW27uQdqXThfmVe-6y4Cq238e4X9-
+```
+
 #### collections
 post /collections
 ```
