@@ -1,6 +1,7 @@
 ### API
 #### collections
 post /collections
+```
 [{
     id: 1
     collectionImg: './././'
@@ -70,9 +71,10 @@ post /collections
     uniqueHoldersChanges: 0.3
     desc: "xxx"
 }]
-
+```
 #### collection
 get /collections/:id
+```
 {
     id: 1
     collectionImg: './././'
@@ -142,10 +144,11 @@ get /collections/:id
     uniqueHoldersChanges: 0.3
     desc: "xxx"
 }
-
+```
 
 #### whale Holders top 100
 post /whaleHolders
+```
 [{
     id
     address: '0x00'
@@ -175,9 +178,10 @@ post /whaleHolders
     realizedPnl: 2333,
     label: cz wallet
 }]
-
+```
 #### hotNfts
 post /nfts
+```
 [{
     id: 1
     name: 'xxxxxx'
@@ -192,8 +196,10 @@ post /nfts
     listed: 12222
 
 }]
-
+```
 
 #### twitter Explore mock
 post /twitter/explore
+```
 ['tama', 'pink','dps']
+```

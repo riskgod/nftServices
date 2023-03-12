@@ -6,7 +6,7 @@ const cors = require('cors');
 import router from './lib/router';
 
 
-async function server(uri) {
+async function server() {
 
   const app = express();
   app.use(bodyParser.json());
@@ -31,9 +31,8 @@ async function server(uri) {
 }
 
 export async function start() {
-    const uri = 'mongodb://127.0.0.1:27017/nft';
     try {
-        await server(uri);
+        await server();
     } catch (error) {
         console.error(error);
     }
