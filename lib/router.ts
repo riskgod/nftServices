@@ -20,8 +20,8 @@ router.post('/getCollections', async (req: any, res) => {
     return res.status(401).send('not authed');
   }
 
-  const { limit, skip } = req.body;
-  const result = await getCollections(skip, limit);
+  const { limit, skip, mint } = req.body;
+  const result = await getCollections(skip, limit, mint);
   return res.status(200).send({
     data: result,
     success: !!result,

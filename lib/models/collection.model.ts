@@ -11,6 +11,7 @@ const CollectionSchema = new Schema({
     holders: String,
     whaleHolers: String,
     mint: String,
+    mintDate: Date,
     twentyfourhrsValues: {
         count: String,
         percentChange: String
